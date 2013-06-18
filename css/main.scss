@@ -163,3 +163,28 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #333;
 }
+
+/*****************************************************************************/
+/*
+/* About
+/*
+/*****************************************************************************/
+
+div#about {
+  
+  div#me {
+
+    p {
+
+      overflow: auto;
+      
+      img#selfie {
+        float: right;
+        border: 1px solid black;
+      }
+
+    }
+
+  }
+
+}
