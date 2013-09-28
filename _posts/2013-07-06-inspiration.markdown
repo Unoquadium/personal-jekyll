@@ -7,9 +7,9 @@ categories: site
 
 My girlfriend runs a [cooking blog](http://nagelsbagels.wordpress.com).
 
-It occured to me today that she never runs out of ideas of what to make in the kitchen. Maybe it's a gift and a curse - she always [has to cook](http://i0.kym-cdn.com/photos/images/original/000/428/084/676.jpg).
+It occured to me today that she never really runs out of ideas of what to make in the kitchen. Maybe it's a gift and a curse - she always [has to cook](http://i0.kym-cdn.com/photos/images/original/000/428/084/676.jpg).
 
-It made me think of what my life would be like if I always had large web projects to work on - turning me into a perpetual coding machine of sorts. I don't think it would be nearly as fun as hacking out an idea I'm passionate about - building it out and releasing it and refining it and seeing it become a community's child. Alas, that idea has not shown itself to me yet.
+It made me think of what my life would be like if I always had large web projects to work on - turning me into a perpetual coding machine of sorts. I don't think it would be nearly as fun as hacking out an idea I'm passionate about - building it out and releasing it and refining it and seeing it become a community's child.Alas, that idea has not shown itself to me yet.
 
 While seeking inspiration (or just looking to kill time), I picked up a copy of [*Rework*](http://www.amazon.com/Rework-Jason-Fried/dp/0307463745), a business book written by the two main guys at 37signals, whose Rails software has been on my mind for the majority of this summer. I found *Rework* to be heavily inspiring, even as a guy who never seriously considered running a business.
 
