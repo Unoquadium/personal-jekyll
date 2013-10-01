@@ -79,13 +79,19 @@ div.container {
     }
 
     div#me {
-      img#selfie { border: 1px solid black; float: right; margin-left: 20px;}
+      #selfie-div { margin-top: 20px; float: right; }
+      img#selfie { border: 1px solid black; margin-left: 20px;}
+    }
+
+    #social-icons {
+      text-align: center;
+      margin: 4px 0 0 20px;
     }
 
   }
 
   div.footer {
-    clear: both;
+    overflow: auto;
     color: #999;
     margin-top: 20px;
     hr { margin: 0; padding-top: 10px; }
