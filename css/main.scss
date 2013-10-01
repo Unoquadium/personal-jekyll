@@ -5,83 +5,88 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
   }
+
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
 }
 
 div.container {
 
-  background: white;
-  margin-top: 60px;
-  width: 800px;
-  border-radius: 6px;
-  border: 1px solid black;
+  .header,
+  .footer {
+    padding: 0 15px;
+  }
 
   a {
     text-decoration: none;
   }
 
   div.header {
-    h1.title {
-      display: inline-block;
-      a {
-        color: black;
-      }
-    }
-    a.extra {
-      margin-left: 10px;
-      font-weight: 600;
-    }
-    div#header-images {
-      margin-top: 20px;
-    }
     hr {
       margin: 0;
     }
+    h3 {
+      line-height: 40px;
+      cursor: default;
+      color: #a66a17;
+    }
   }
 
-  div#home {
+  div#main {
 
-    color: black;
-    font-weight: normal;
+    padding: 0 15px;
+
+    h3 {
+      font-size: 40px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    p {
+    }
 
     ul.posts {
       list-style-type: none;
       margin-left: -38px;
     }
 
-  }
+    table#portfolio {
+      .title-row {
+        line-height: 1.8;
+      }
+      .title {
+        font-size: 24px;
+      }
+      .image img {
+        width: 300px;
+        border: 1px solid #999;
+      }
+      .description p {
+        padding-left: 20px;
+        line-height: 1.5;
+      }
+      tr {
+      }
+    }
 
-  div#about {
+    div.hidden-images {
+      display: none;
+    }
 
     div#me {
-      img#selfie { float: right; border: 1px solid black; margin-left: 20px; }
-      overflow: auto;
+      img#selfie { border: 1px solid black; float: right; margin-left: 20px;}
     }
 
-  }
-
-  div#portfolio {
-    h3 { margin-bottom: 20px; }
-    div.p-item {
-      overflow: auto;
-      div.p-title {
-        font-weight: bold;
-        font-size: 20px;
-        margin-bottom: 10px;
-      }
-      div.p-image img {
-        width: 300px;
-        float: left;
-        border: 1px solid black;
-      }
-      div.p-description {
-        float: right;
-        width: 450px;
-      }
-    }
   }
 
   div.footer {
     clear: both;
+    color: #999;
     margin-top: 20px;
     hr { margin: 0; padding-top: 10px; }
   }

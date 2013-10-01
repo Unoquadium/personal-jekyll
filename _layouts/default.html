@@ -1,44 +1,56 @@
+{{% include tagline %}}
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>{{ page.title }}</title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Portfolio site for Ilya Rubnich">
+      <meta name="author" content="Ilya Rubnich">
 
-      <!-- syntax highlighting CSS -->
-      <link rel="stylesheet" href="/css/syntax.css">
+      <title>{{ page.title }}</title>
 		
 		  <!-- Bootstrap -->
 		  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 
       <!-- Custom CSS -->
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+      <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="/css/main.css">
+
+      {% if page.url == "/portfolio/index.html" %}
+        <link rel="stylesheet" href="/css/lightbox.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="/js/lightbox-2.6.min.js"></script>
+      {% endif %}
     </head>
     <body>
 
         <div class="container">
           <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/portfolio">Portfolio</a>
-            <a class="extra" href="/blog">Blog</a>
-            <a class="extra" href="/about">About</a>
-            <div id="header-images" class="pull-right">
-              <a href="http://twitter.com/unoquadium"><img src="/images/twitter-32-black.png" alt="Twitter" /></a>
-              <a href="http://www.linkedin.com/pub/ilya-rubnich/37/a4/bb5/"><img src="/images/linkedin-32-black.png" alt="LinkedIn" /></a>
-            </div>
-            <hr />
+
+            <ul class="nav nav-pills pull-right">
+              <li {% if page.url == "/index.html" %} class="active" {% endif %}><a href="/">Home</a></li>
+              <li {% if page.url == "/portfolio/index.html" %} class="active" {% endif %}><a href="/portfolio">Portfolio</a></li>
+              <li {% if page.url == "/blog/index.html" or page.id %} class="active" {% endif %}><a href="/blog">Blog</a></li>
+              <li {% if page.url == "/about/index.html" %} class="active" {% endif %}><a href="/about">About</a></li>
+            </ul>
+            <h3>{{ site.name }} <small>Web Developer</small></h3>
+
+            <!--
+            <a href="http://twitter.com/unoquadium"><img src="/images/twitter-32-black.png" alt="Twitter" /></a>
+            <a href="http://www.linkedin.com/pub/ilya-rubnich/37/a4/bb5/"><img src="/images/linkedin-32-black.png" alt="LinkedIn" /></a>
+            -->
+
+            <hr>
           </div>
 
           {{ content }}
 
           <div class="footer">
-            <hr />
-            <p>
-              &copy; 2013
-            </p>
+            <hr>
+            <p>&copy; 2013</p>
           </div>
+
         </div> <!-- /container -->
 
         <script type="text/javascript">
