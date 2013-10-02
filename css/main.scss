@@ -9,14 +9,8 @@ body {
   padding: 20px 0;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-
 div.container {
-
+  width: 730px;
   .header,
   .footer {
     padding: 0 15px;
@@ -27,14 +21,19 @@ div.container {
   }
 
   div.header {
-    hr {
-      margin: 0;
-    }
+    overflow: auto;
     h3 {
       line-height: 40px;
       cursor: default;
       color: #a66a17;
     }
+    ul {
+      padding-top: 20px;
+    }
+  }
+
+  hr {
+      margin: 0;
   }
 
   div#main {
@@ -57,7 +56,7 @@ div.container {
 
     table#portfolio {
       .title-row {
-        line-height: 1.8;
+        line-height: 2.4;
       }
       .title {
         font-size: 24px;
@@ -98,3 +97,34 @@ div.container {
   }
 
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+/*@media screen and (max-width: 640px) {
+  .container {
+    max-width: 400px;
+  }
+  .header {
+    h3 {
+      float: none !important;
+      text-align: center;
+      line-height: 0 !important;
+    }
+    ul {
+      float: none !important;
+      text-align: center;
+      padding-top: 0 !important;
+      margin: 0 0 0 25px;
+      li.active {
+        a{
+          background-color: white;
+          color: #428bca;
+        }
+      }
+    }
+  }
+}*/
