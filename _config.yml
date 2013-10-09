@@ -1,2 +1,4 @@
 name: Ilya Rubnich
 pygments: true
+
+exclude: ["Thumbs.db"]

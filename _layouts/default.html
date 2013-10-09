@@ -21,18 +21,23 @@
         <script src="/js/jquery.colorbox-min.js"></script>
         <link rel="stylesheet" href="/css/colorbox.css">
       {% endif %}
+
+      {% if page.url == "/index.html" %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+      {% endif %}
     </head>
     <body>
 
         <div class="container">
           <div class="header">
 
-            <h3 class="pull-left">{{ site.name }} <small>Web Developer</small></h3>
+            <h3 class="pull-left">{{ site.name }} <small>web developer</small></h3>
             <ul class="nav nav-pills pull-right">
-              <li {% if page.url == "/index.html" %} class="active" {% endif %}><a href="/">Home</a></li>
-              <li {% if page.url == "/portfolio/index.html" %} class="active" {% endif %}><a href="/portfolio">Portfolio</a></li>
-              <li {% if page.url == "/blog/index.html" or page.id %} class="active" {% endif %}><a href="/blog">Blog</a></li>
-              <li {% if page.url == "/about/index.html" %} class="active" {% endif %}><a href="/about">About</a></li>
+              <li {% if page.url == "/index.html" %} class="active" {% endif %}><a href="/">home</a></li>
+              <li {% if page.url == "/portfolio/index.html" %} class="active" {% endif %}><a href="/portfolio">portfolio</a></li>
+              <li {% if page.url == "/blog/index.html" or page.id %} class="active" {% endif %}><a href="/blog">blog</a></li>
+              <li {% if page.url == "/about/index.html" %} class="active" {% endif %}><a href="/about">about</a></li>
             </ul>
 
           </div>
@@ -42,7 +47,11 @@
 
           <div class="footer">
             <hr>
-            <p>&copy; 2013</p>
+            <p class="pull-left">&copy; 2013</p>
+            <div id="social-info" class="pull-right">
+              <a href="http://twitter.com/unoquadium" target="_blank">twitter</a> &bull;
+              <a href="http://www.linkedin.com/pub/ilya-rubnich/37/a4/bb5/" target="_blank">linkedin</a>
+            </div>
           </div>
 
         </div> <!-- /container -->

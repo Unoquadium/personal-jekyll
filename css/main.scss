@@ -34,9 +34,35 @@ div.container {
 
   hr {
       margin: 0;
+      padding: 0 15px;
   }
 
   div#main {
+
+    .home-section {
+      height: 120px;
+      border: 1px solid black;
+      margin: 16px 0;
+      &.one { background: url('/images/home-img.gif'); }
+      &.two { background: url('/images/home-pen.gif'); }
+      &.three { background: url('/images/home-glasses.gif'); }
+      div#top-text {
+        float: right;
+        z-index: 2;
+        position: relative;
+        top: 12px;
+        right: 12px;
+        font-weight: 600;
+        background: #ccc;
+      }
+      div.img {
+        display: none;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+      }
+    }
 
     padding: 0 15px;
 
@@ -46,7 +72,8 @@ div.container {
       margin-bottom: 10px;
     }
 
-    p {
+    p#home-bottom {
+      text-align: center;
     }
 
     ul.posts {
@@ -69,7 +96,8 @@ div.container {
         padding-left: 20px;
         line-height: 1.5;
       }
-      tr {
+      .sep {
+        height: 20px;
       }
     }
 
@@ -78,13 +106,8 @@ div.container {
     }
 
     div#me {
-      #selfie-div { margin-top: 20px; float: right; }
+      #selfie-div { margin-top: 28px; float: right; }
       img#selfie { border: 1px solid black; margin-left: 20px;}
-    }
-
-    #social-icons {
-      text-align: center;
-      margin: 4px 0 0 20px;
     }
 
   }
@@ -94,6 +117,11 @@ div.container {
     color: #999;
     margin-top: 20px;
     hr { margin: 0; padding-top: 10px; }
+    #social-info {
+      a {
+        color: #999;
+      }
+    }
   }
 
 }

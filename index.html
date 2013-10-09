@@ -4,9 +4,42 @@ title: i@r.ch
 ---
 
 <div id="main">
-  <h3>Hi There!</h3>
-  <p>
-  	Guess you've stumbled over here, might as well stick around?<br />
-  	Check out my <a href="/portfolio">work</a>, my <a href="/blog">writing</a>, or <a href="/about">me</a>!
-  </p>
+  	<div class="home-section one">
+		<a href="/portfolio"><div class="img"></div></a>
+	</div>
+	<div class="home-section two">
+		<a href="/blog"><div class="img"></div></a>
+	</div>
+	<div class="home-section three">
+		<a href="/about"><div class="img"></div></a>
+	</div>
+  	<p id="home-bottom">
+  		irubnich@gmail.com
+  		<br>
+  		347.871.3858
+  	</p>
 </div>
+
+<script type="text/javascript">
+	$(".home-section").hover(function() {
+		var el = $(this).find("div.img");
+		var slide_dir;
+		switch($(this).index()) {
+			case 0:
+				el.css('background', "url('/images/home-code.gif')");
+				slide_dir = 'right';
+				break;
+			case 1:
+				el.css('background', "url('/images/home-blog.gif')");
+				slide_dir = 'left';
+				break;
+			case 2:
+				el.css('background', "url('/images/home-me.gif')");
+				slide_dir = 'right';
+				break;
+		}
+		el.show('slide', { direction: slide_dir }, 100);
+	}, function() {
+		$(this).find("div.img").hide('slide', { direction: 'left' }, 100);
+	});
+</script>
