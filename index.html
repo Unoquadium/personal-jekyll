@@ -21,6 +21,16 @@ title: i@r.ch
 </div>
 
 <script type="text/javascript">
+	// preload images
+	var preload = function(images) {
+		for (i = 0; i < images.length; i++) {
+			var img = new Image();
+			img.src = images[i];
+		}
+	}
+	preload(["/images/home-code.gif", "/images/home-blog.gif", "/images/home-me.gif"]);
+
+	// hover
 	$(".home-section").hover(function() {
 		var el = $(this).find("div.img");
 		var slide_dir;
