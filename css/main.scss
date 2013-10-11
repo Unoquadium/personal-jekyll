@@ -105,6 +105,8 @@ div.container {
       display: none;
     }
 
+    a#m { color: inherit; }
+
     div#me {
       #selfie-div { margin-top: 28px; float: right; }
       img#selfie { border: 1px solid black; margin-left: 20px;}
