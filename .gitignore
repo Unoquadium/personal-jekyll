@@ -2,3 +2,4 @@ _site
 logs
 *Thumbs.db
 .sass-cache
+error.log
