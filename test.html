@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+<style>
+	body {
+		font-family: Helvetica, sans-serif;
+	}
+	#something {
+		font-size: 150px;
+		color: #ccc;
+		margin-top: 20%;
+	}
+</style>
+
+<div id="something">
+	<span>
+		Hi I'm Ilya.
+	</span>
+</div>
+
+<script>
+	// Start timer
+	var start = new Date().getTime();
+
+	// Loop
+	var one = 0;
+	var two = 0;
+	for(var i = 0; i < 1000000; i++) {
+		var num = Math.floor((Math.random()*2)+1);
+		if(num == 1) { one++; }
+		else { two++; }
+	}
+	console.log(one, two);
+
+	// End timer & display
+	var end = new Date().getTime();
+	var time = end - start;
+	console.log(time);
+</script>

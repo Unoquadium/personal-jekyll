@@ -1,0 +1,45 @@
+---
+layout: default
+title: i@r.ch
+---
+
+<div id="main">
+  	<div class="home-section one">
+		<a href="/portfolio"><div class="img"></div></a>
+	</div>
+	<div class="home-section three">
+		<a href="/about"><div class="img"></div></a>
+	</div>
+  	<p id="home-bottom">
+  	</p>
+</div>
+
+<script type="text/javascript">
+	// preload images
+	var preload = function(images) {
+		for (i = 0; i < images.length; i++) {
+			var img = new Image();
+			img.src = images[i];
+		}
+	}
+	preload(["/images/home-code.gif", "/images/home-blog.gif", "/images/home-me.gif"]);
+
+	// hover
+	$(".home-section").hover(function() {
+		var el = $(this).find("div.img");
+		var slide_dir;
+		switch($(this).index()) {
+			case 0:
+				el.css('background', "url('/images/home-code.gif')");
+				slide_dir = 'right';
+				break;
+			case 1:
+				el.css('background', "url('/images/home-me.gif')");
+				slide_dir = 'right';
+				break;
+		}
+		el.show('slide', { direction: slide_dir }, 100);
+	}, function() {
+		$(this).find("div.img").hide('slide', { direction: 'left' }, 100);
+	});
+</script>
